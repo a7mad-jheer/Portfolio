@@ -10,7 +10,7 @@ export const CardProject = ({ CardData }: { CardData: CardInfo[] }) => {
           return (
             <div
               key={data.id}
-              className="relative  w-[80%]  group [perspective:1000px] "
+              className="relative  w-[80%] md:w-[30%] group [perspective:1000px] "
             >
               <div
                 className=" md:h-150 h-120 transition-transform group-hover:[transform:rotateX(40deg)]   transform-style-preserve-3d duration-300"
