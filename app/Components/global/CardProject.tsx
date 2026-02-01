@@ -5,12 +5,12 @@ import { CardInfo } from "@/config/navigation";
 export const CardProject = ({ CardData }: { CardData: CardInfo[] }) => {
   return (
 
-      <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-10 rounded-2xl bg-transparent ">
+      <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-10 rounded-2xl  ">
         {CardData.map((data) => {
           return (
             <div
               key={data.id}
-              className="relative backdrop-blur-2xl w-[80%]  group [perspective:1000px] "
+              className="relative  w-[80%]  group [perspective:1000px] "
             >
               <div
                 className=" md:h-150 h-120 transition-transform group-hover:[transform:rotateX(40deg)]   transform-style-preserve-3d duration-300"
