@@ -13,9 +13,9 @@ export const CardProject = ({ CardData }: { CardData: CardInfo[] }) => {
               className="relative backdrop-blur-2xl w-[80%]  group [perspective:1000px] "
             >
               <div
-                className=" h-150 transition-transform group-hover:[transform:rotateX(40deg)]   transform-style-preserve-3d duration-300"
+                className=" md:h-150 h-120 transition-transform group-hover:[transform:rotateX(40deg)]   transform-style-preserve-3d duration-300"
               >
-                <div className="relative w-full h-[70%] z-10">
+                <div className="relative w-full h-1/2 md:h-[70%] z-10 ">
                   <Image
                     src={data.img}
                     alt=""
