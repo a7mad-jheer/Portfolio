@@ -1,16 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import {
-  Hero,
-  AboutMe,
-  Contact,
-  Footer,
-  Project,
-  Skills,
-} from "../LandingComponent";
+import { Hero, AboutMe, Contact, Footer, Project, Skills } from ".";
 
 import { Header } from "../layout";
-import { LeftLine, Rightline } from ".";
+import { LeftLine, Rightline } from "../global";
 
 export default function Section() {
   const [active, setActive] = useState("hero");

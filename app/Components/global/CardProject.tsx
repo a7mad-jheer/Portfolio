@@ -5,15 +5,15 @@ import { CardInfo } from "@/config/navigation";
 export const CardProject = ({ CardData }: { CardData: CardInfo[] }) => {
   return (
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 rounded-2xl bg-transparent ">
+      <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-10 rounded-2xl bg-transparent ">
         {CardData.map((data) => {
           return (
             <div
               key={data.id}
-              className="relative backdrop-blur-2xl md:w-1/3  group [perspective:1000px]  "
+              className="relative backdrop-blur-2xl w-[80%]  group [perspective:1000px]"
             >
               <div
-                className="transition-transform group-hover:[transform:rotateX(40deg)] transform-style-preserve-3d duration-300"
+                className="transition-transform group-hover:[transform:rotateX(40deg)]   transform-style-preserve-3d duration-300"
               >
                 <div className="relative w-full h-72 z-10">
                   <Image
@@ -24,13 +24,21 @@ export const CardProject = ({ CardData }: { CardData: CardInfo[] }) => {
                   />
                 </div>
 
-                <div className="text-white/60 p-2 space-y-2 bg-black/20">
-                  <h1 className="text-center text-3xl">{data.title}</h1>
-                  <p className="text-center">{data.description}</p>
+                <div className="text-white/60 p-2 space-y-2 bg-black/20 text-center ">
+                  <h1 className=" text-3xl">{data.title}</h1>
+                  <p className="mb-5">{data.description}</p>
+                  <Link
+                  className="md:hidden text-red-600 text-md   font-semibold "
+                  href={data.href}
+                >
+                  Go To site
+                </Link>
                 </div>
+
+                
               </div>
 
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 text-center  z-0 ">
+              <div className="hidden md:block absolute  top-0 left-1/2 -translate-x-1/2 text-center  z-0 ">
                 <Link
                   className=" text-white/70 text-xl font-semibold "
                   href={data.href}

@@ -28,7 +28,7 @@ const tools : SkillsData[] = [
 
 export const Skills = () => {
     return(
-        <div className="p-10">
+        <div className="p-5">
                 <Title text="Tools & Technologies"/>
                 <div className="md:mt-20 ">
                     <Description text="Technologies I have worked with"/>

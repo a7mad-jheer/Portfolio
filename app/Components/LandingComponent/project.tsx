@@ -79,24 +79,21 @@ const CardInfoJS = [
   },
 ];
 
-
-const ProjectSection : Section[]= [
+const ProjectSection: Section[] = [
   { id: 0, title: "Next JS Projects", data: CardInfoNext },
   { id: 1, title: "Html & Css & JavaScript Projects", data: CardInfoHTMLJS },
   { id: 2, title: "JavaScript Projects", data: CardInfoJS },
 ];
 
-
 export const Project = () => {
   return (
-    <div className=" md:my-20 md:py-20 py-10 px-10 border-y-2 ">
+    <div className=" md:my-20 md:py-20 py-10  border-y-2 ">
       <Title text="My Projects" />
 
       {ProjectSection.map((project) => {
         return (
           <div key={project.id} className="md:mt-20">
-              <Description text={project.title} />
-            
+            <Description text={project.title} />
             <CardProject CardData={project.data} />
           </div>
         );

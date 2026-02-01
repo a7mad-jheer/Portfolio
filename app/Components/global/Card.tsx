@@ -5,7 +5,7 @@ export const Card = ({items} : {items : {id:number , name:string , color:string}
             return (
       <div
       key={item.id}
-        className={`backdrop-blur-2xl ${item.color} rounded-4xl md:py-10 py-3 text-center duration-400   w-100 `}>
+        className={`backdrop-blur-2xl ${item.color} rounded-4xl md:py-10 py-3 text-center duration-400   sm:w-80 w-full`}>
         <h2 className=" md:text-3xl text-xl font-semibold ">{item.name}</h2>
       </div>
             )

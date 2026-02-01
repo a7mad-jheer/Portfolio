@@ -44,7 +44,7 @@ export const Contact = () => {
     <div className="relative md:my-20 md:py-0 py-10">
       <Title text="Contact Me" />
       <div className="flex flex-col md:flex-row items-center justify-center gap-2">
-        <form onSubmit={handelSendMess} className="bg-black/20 backdrop-blur-2xl w-100 md:my-20 my-5 md:p-10 p-5 flex flex-col items-center gap-5 rounded-2xl shadow-2xl">
+        <form onSubmit={handelSendMess} className="bg-black/20 backdrop-blur-2xl sm:w-100 w-full md:my-20 my-5 md:p-10 p-5 flex flex-col items-center gap-5 rounded-2xl shadow-2xl">
           <h1 className="text-2xl text-white font-semibold ">Send a Message</h1>
           <input
             type="text"
