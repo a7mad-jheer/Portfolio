@@ -50,11 +50,11 @@ const socialMedia: NavItem[] = [
 
 const NavItems: NavItem[] = [
   // {id: 0 , icon : <FaAngleDoubleUp /> , href : "top"  },
-  { id: 1, icon: <IoHome />, href: "hero", name: "Hero" },
-  { id: 2, icon: <GrProjects />, href: "project", name: "My Project" },
-  { id: 3, icon: <GiSkills />, href: "skills", name: "My Skills" },
-  { id: 4, icon: <FaUserAlt />, href: "about", name: "About Me" },
-  { id: 5, icon: <FaCommentDots />, href: "contact", name: "Contact Me" },
+  { id: 1, icon: <IoHome />, href: "#hero", name: "Hero" },
+  { id: 2, icon: <GrProjects />, href: "#project", name: "My Project" },
+  { id: 3, icon: <GiSkills />, href: "#skills", name: "My Skills" },
+  { id: 4, icon: <FaUserAlt />, href: "#about", name: "About Me" },
+  { id: 5, icon: <FaCommentDots />, href: "#contact", name: "Contact Me" },
   // {id: 6 , icon: <FaAngleDoubleDown /> , href : "bottom"  }
 ];
 
@@ -109,14 +109,14 @@ export const Header = ({ active }: { active: string }) => {
 
       {/* Show List */}
       <div
-        className={`xl:hidden transform  transition-transform duration-500 ease-in-out ${list ? "translate-x-0" : "translate-x-full"} fixed top-20 right-0 w-full  h-[calc(100vh-5rem)]  bg-gray-950 backdrop-blur-2xl duration-300`}
+        className={`xl:hidden ${list ? "block" : "hidden"} transform  transition-transform duration-500 ease-in-out ${list ? "translate-x-0" : "translate-x-full"} fixed top-20 right-0 w-full  h-[calc(100vh-5rem)]  bg-gray-950 backdrop-blur-2xl duration-300`}
       >
         <ul className="flex flex-col gap-0.5 h-full overflow-y-auto">
           <li>
             <h2 className="text-white text-xl font-semibold text-center p-5 bg-black">
               Navigation
             </h2>
-            <ListNav data={NavItems} />
+            <ListNav setState ={setList} list={list} data={NavItems} />
           </li>
           <li>
             <h2 className="text-white text-xl font-semibold text-center p-5 bg-black">
@@ -125,7 +125,7 @@ export const Header = ({ active }: { active: string }) => {
           </li>
 
           <li>
-            <ListNav data={socialMedia} />
+            <ListNav setState ={setList} list={list} data={socialMedia} />
           </li>
         </ul>
       </div>

@@ -29,31 +29,31 @@ export default function Section() {
       <LeftLine />
       <Rightline />
 
-      <div id="hero" className="observe-section">
+      <div id="#hero" className="observe-section">
         <Header active={active} />
       </div>
 
-      <div id="hero" className="observe-section">
+      <div id="#hero" className="observe-section">
         <Hero />
       </div>
 
-      <div id="project" className="observe-section">
+      <div id="#project" className="observe-section">
         <Project />
       </div>
 
-      <div id="skills" className="observe-section">
+      <div id="#skills" className="observe-section">
         <Skills />
       </div>
 
-      <div id="about" className="observe-section">
+      <div id="#about" className="observe-section">
         <AboutMe />
       </div>
 
-      <div id="contact" className="observe-section">
+      <div id="#contact" className="observe-section">
         <Contact />
       </div>
 
-      <div id="bottom">
+      <div id="#bottom">
         <Footer />
       </div>
     </div>
