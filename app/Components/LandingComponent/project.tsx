@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Title from "../global/Title";
 import Description from "../global/Description";
-import Link from "next/link";
+import CardProject from "../global/CardProject";
+import { Section } from "@/config/navigation";
 
 const CardInfoNext = [
   {
@@ -10,7 +10,7 @@ const CardInfoNext = [
     title: "WhitCollar Project",
     description:
       "WhiteCollar is a professional corporate website focused on clean layouts, clear content structure, and responsive design, built using Next.js and Tailwind CSS.",
-    href: "",
+    href: "https://whit-collar-35745s2up-ahmed-jheers-projects.vercel.app/",
   },
   {
     id: 1,
@@ -18,7 +18,7 @@ const CardInfoNext = [
     title: "NetGrid Project",
     description:
       "NetGrid is a modern web platform built with Next.js and Tailwind CSS, designed to provide a clean, responsive, and user-friendly experience while showcasing interactive layouts and smooth navigation.",
-    href: "",
+    href: "https://netgrid-films-site.vercel.app/LandingPage",
   },
 
   {
@@ -79,105 +79,28 @@ const CardInfoJS = [
   },
 ];
 
+
+const ProjectSection : Section[]= [
+  { id: 0, title: "Next JS Projects", data: CardInfoNext },
+  { id: 1, title: "Html & Css & JavaScript Projects", data: CardInfoHTMLJS },
+  { id: 2, title: "JavaScript Projects", data: CardInfoJS },
+];
+
+
 export const Project = () => {
   return (
-    <div className="relative md:my-20 md:py-20 py-10 px-5   border-y-2">
+    <div className=" md:my-20 md:py-20 py-10 px-10 border-y-2 ">
       <Title text="My Projects" />
-      <div className="md:mt-20">
-        <Description text="Next JS Projects" />
-        <div className="flex flex-col md:flex-row items-center gap-10 rounded-2xl ">
-          {CardInfoNext.map((card) => {
-            return (
-              <div
-                key={card.id}
-                className="bg-black/20 backdrop-blur-2xl md:w-1/3 "
-              >
-                <div className="relative w-full h-100 ">
-                  <Image  src={card.img} alt="" className="object-cover object-top" fill />
-                </div>
 
-                <div className="text-white/60 p-2 space-y-2">
-                  <h1 className="text-center text-3xl">{card.title}</h1>
-                  <p className="text-center">{card.description}</p>
-                </div>
-
-                <div className="text-center py-5">
-                  <Link
-                    className="backdrop-blur-2xl bg-black/60 px-3 py-2 rounded-md hover:bg-black/10 text-white text-sm "
-                    href={card.href}
-                  >
-                    Go To site
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="mt-20">
-        <Description text="Html & Css & JavaScript Projects" />
-        <div className="flex flex-col md:flex-row md:gap-5 gap-10 items-center justify-center rounded-2xl mt-10">
-          {CardInfoHTMLJS.map((card) => {
-            return (
-              <div
-                key={card.id}
-                className="bg-black/20 backdrop-blur-2xl md:w-1/3"
-              >
-                <div className="relative w-full h-100 ">
-                  <Image src={card.img} alt="" className="object-cover  object-top" fill />
-                </div>
-
-                <div className="text-white/60 p-2 space-y-2">
-                  <h1 className="text-center text-3xl">{card.title}</h1>
-                  <p className="text-center">{card.description}</p>
-                </div>
-
-                <div className="text-center py-5">
-                  <Link
-                    className="backdrop-blur-2xl bg-black/60 px-3 py-2 rounded-md hover:bg-black/10 text-white text-sm "
-                    href={card.href}
-                  >
-                    Go To site
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="mt-20">
-        <Description text="JavaScript Projects" />
-        <div className="flex flex-col md:flex-row md:gap-5 gap-10 items-center justify-center rounded-2xl mt-10">
-          {CardInfoJS.map((card) => {
-            return (
-              <div
-                key={card.id}
-                className="bg-black/20 backdrop-blur-2xl md:w-1/3"
-              >
-                <div className="relative w-full h-100 ">
-                  <Image src={card.img} alt="" className="object-cover" fill />
-                </div>
-
-                <div className="text-white/60 p-2 space-y-2">
-                  <h1 className="text-center text-3xl">{card.title}</h1>
-                  <p className="text-center">{card.description}</p>
-                </div>
-
-                <div className="text-center py-5">
-                  <Link
-                    className="backdrop-blur-2xl bg-black/60 px-3 py-2 rounded-md hover:bg-black/10 text-white text-sm "
-                    href={card.href}
-                  >
-                    Go To site
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      {ProjectSection.map((project) => {
+        return (
+          <div key={project.id} className="md:mt-20">
+              <Description text={project.title} />
+            
+            <CardProject CardData={project.data} />
+          </div>
+        );
+      })}
     </div>
   );
 };

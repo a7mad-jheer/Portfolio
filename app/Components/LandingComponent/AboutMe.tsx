@@ -7,7 +7,7 @@ const AboutMeText = [
 ]
 export const AboutMe = () => {
 return (
-    <div className="relative md:my-20 md:py-20 py-10 px-5 border-y-2">
+    <div className="relative md:my-20 md:py-20 py-10 px-10 border-y-2">
         <Title text="About ME"/>
 
         <div className="z-15 flex flex-col md:flex-row justify-center gap-2 md:my-20 my-10">

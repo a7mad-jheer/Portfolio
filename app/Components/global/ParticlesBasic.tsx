@@ -1,4 +1,4 @@
-import { Particles } from "@/components/ui/shadcn-io/particles";
+import { Particles } from "@/config/components/ui/shadcn-io/particles";
 
 export  function ParticlesBasic({children} : {children:React.ReactNode}) {
   return (

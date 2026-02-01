@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "app/articles/[title]/page.jsx", "app/articles/page.jsx", "app/layout.tsx", "app/(grid)/page.tsx", "app/posts/page.jsx"  ],
+, "app/articles/[title]/page.jsx", "app/articles/page.jsx", "app/layout.tsx", "app/(grid)/page.tsx", "app/posts/page.jsx", "app/Components/LandingComponent/index.tsx"  ],
   "exclude": ["node_modules"]
 }

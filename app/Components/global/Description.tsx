@@ -1,6 +1,6 @@
-export const Description = ({ text }: { text: string }) => {
+export const Description = ({ text , style}: { text: string,  style?:string }) => {
   return (
-    <p className="text-xl text-white/60 font-bold text-center my-5 ">
+    <p className={`text-xl border-2 p-2 text-white font-bold text-center my-20  bg-black ${style}`} >
       {text}
     </p>
   );
