@@ -1,6 +1,6 @@
 export const Card = ({items} : {items : {id:number , name:string , color:string}[]}) => {
   return (
-    <div className="flex flex-col gap-3  xl:flex-row md:flex-wrap md:justify-center md:items-center">
+    <div className="flex flex-col gap-3  xl:flex-row md:flex-wrap justify-center items-center">
         {items.map((item) => {
             return (
       <div
