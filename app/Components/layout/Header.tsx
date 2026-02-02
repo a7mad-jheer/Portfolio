@@ -20,41 +20,46 @@ const socialMedia: NavItem[] = [
     icon: <IoIosMailUnread />,
     href: "mailto:ahmedjj800@gmail.com",
     name: "Gmail",
+    type : "socialmedia"
   },
   {
     id: 2,
     icon: <FaFacebook />,
     href: "https://www.facebook.com/share/16qGUWZPVV/",
     name: "Facebook",
+    type : "socialmedia"
   },
   {
     id: 3,
     icon: <AiFillInstagram />,
     href: "https://www.instagram.com/a7mad_jheer/",
     name: "Instagram",
+    type : "socialmedia"
   },
   {
     id: 4,
     icon: <IoLogoWhatsapp />,
     href: "https://wa.me/972597752547?text=Hi, I'm contacting you from your portfolio website!",
     name: "Whatsapp",
+    type : "socialmedia"
   },
   {
     id: 5,
     icon: <FaLinkedin />,
     href: "https://www.linkedin.com/in/ahmed-jheer-179931337/",
     name: "LinkedIn",
+    type : "socialmedia"
   },
   // {id: 6 , icon: <CiCircleList /> ,  }
 ];
 
 const NavItems: NavItem[] = [
   // {id: 0 , icon : <FaAngleDoubleUp /> , href : "top"  },
-  { id: 1, icon: <IoHome />, href: "#hero", name: "Hero" },
-  { id: 2, icon: <GrProjects />, href: "#project", name: "My Project" },
-  { id: 3, icon: <GiSkills />, href: "#skills", name: "My Skills" },
-  { id: 4, icon: <FaUserAlt />, href: "#about", name: "About Me" },
-  { id: 5, icon: <FaCommentDots />, href: "#contact", name: "Contact Me" },
+  { id: 1, icon: <IoHome />, href: "#hero", name: "Hero" , type : "navigation"},
+  { id: 2, icon: <GrProjects />, href: "#project", name: "My Project" , type : "navigation" },
+  { id: 3, icon: <GiSkills />, href: "#skills", name: "My Skills" , type : "navigation" },
+  { id: 4, icon: <FaUserAlt />, href: "#about", name: "About Me" , type : "navigation" },
+  { id: 5, icon: <FaCommentDots />, href: "#contact", name: "Contact Me" , type : "navigation" },
   // {id: 6 , icon: <FaAngleDoubleDown /> , href : "bottom"  }
 ];
 

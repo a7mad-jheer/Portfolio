@@ -17,7 +17,7 @@ const CardInfoNext = [
     img: "/NetGrid-image.png",
     title: "NetGrid Project",
     description:
-      "NetGrid is a modern web platform built with Next.js and Tailwind CSS, designed to provide a clean, responsive, and user-friendly experience while showcasing interactive layouts and smooth navigation.",
+      "NetGrid is a Next.js movie platform with dynamic content and responsive design, currently in development.",
     href: "https://netgrid-films-site.vercel.app/LandingPage",
   },
 
@@ -37,7 +37,7 @@ const CardInfoHTMLJS = [
     img: "/PersonalProject1.png",
     title: "Personal-Dashboard",
     description:
-      "A simple and efficient Todo App built with Next.js and Tailwind CSS, designed to help users manage their tasks effectively with a clean and user-friendly interface.",
+      "Personal-Dashboard is a simple, interactive dashboard built with HTML, CSS, and JavaScript, designed to organize personal tasks and information.",
     href: "https://a7mad-jheer.github.io/personal-dashboard/",
   },
 
@@ -46,7 +46,7 @@ const CardInfoHTMLJS = [
     img: "/Codevia-Medical.png",
     title: "Codevia-Medical",
     description:
-      "A simple and efficient Todo App built with Next.js and Tailwind CSS, designed to help users manage their tasks effectively with a clean and user-friendly interface.",
+      "Codevia-Medical is a single-page medical website built with HTML, CSS, and JavaScript, featuring multiple sections like cards, contact forms, and healthcare content.",
     href: "https://a7mad-jheer.github.io/Codevia-Medical/",
   },
 ];
@@ -57,7 +57,7 @@ const CardInfoJS = [
     img: "/CodeSpaceInvades.png",
     title: "Code Space Invades",
     description:
-      "A simple and efficient Todo App built with Next.js and Tailwind CSS, designed to help users manage their tasks effectively with a clean and user-friendly interface.",
+      "Code Space Invades is a scalable JavaScript game showcasing modular code structure and interactive design, built with professional development practices in mind.",
     href: "https://a7mad-jheer.github.io/Space-Invaders/",
   },
 
@@ -66,7 +66,7 @@ const CardInfoJS = [
     img: "/CodeDoodleJump1.png",
     title: "Code Doodle Jump",
     description:
-      "A simple and efficient Todo App built with Next.js and Tailwind CSS, designed to help users manage their tasks effectively with a clean and user-friendly interface.",
+      "Code Doodle Jump is a scalable JavaScript game featuring modular design and interactive gameplay, built with professional coding practices in mind.",
     href: "https://a7mad-jheer.github.io/Code-Doodle-/",
   },
   {
@@ -74,7 +74,7 @@ const CardInfoJS = [
     img: "/BreackBreaker.png",
     title: "Breack Breaker",
     description:
-      "A simple and efficient Todo App built with Next.js and Tailwind CSS, designed to help users manage their tasks effectively with a clean and user-friendly interface.",
+      "Break Breaker is a scalable JavaScript game with modular code and interactive mechanics, built following professional development practices.",
     href: "https://a7mad-jheer.github.io/Brick-Breaker/",
   },
 ];

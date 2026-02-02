@@ -1,7 +1,7 @@
 import { JSX } from "react"
 
 export type NavItem = {
-    id : number , icon : JSX.Element , href ?: string , name ?:string
+    id : number , icon : JSX.Element , href ?: string , name ?:string , type:string
 }
 
 export type CardInfo = {

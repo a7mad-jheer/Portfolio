@@ -11,16 +11,20 @@ export const ListNav = ({data , setState , list} : {data:NavItem[] , setState :(
     return (
         <div
       key={item.id}
-      className={` text-white/40 p-5 flex items-center justify-between font-semibold hover:bg-black hover:text-white`}
+      
     >
-      <a href={`${item.href}`}  className="flex gap-2 items-center" onClick={()=>setState(!list)}>
-        <span className="text-2xl">{item.icon}</span>
+      <a href={item.type === "socialmedia" ? `${item.href}` : `#${item.href}`}   onClick={()=>setState(!list)} className={` text-white/40 p-5 flex items-center justify-between font-semibold hover:bg-black hover:text-white`}>
+        <div className="flex gap-2 items-center">
+          <span className="text-2xl">{item.icon}</span>
         <span className="text-xl">{item.name}</span>
-      </a >
-      <div>
+        </div>
+
         <span className="text-3xl ">
           <GoArrowRight />
         </span>
+      </a >
+      <div>
+        
       </div>
     </div>
     )

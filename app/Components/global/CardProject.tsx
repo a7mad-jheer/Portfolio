@@ -10,10 +10,10 @@ export const CardProject = ({ CardData }: { CardData: CardInfo[] }) => {
           return (
             <div
               key={data.id}
-              className="relative  w-[80%] md:w-[30%] group [perspective:1000px] "
+              className="relative  w-[80%] md:w-[40%] group [perspective:1000px] "
             >
               <div
-                className=" md:h-150 h-120 transition-transform group-hover:[transform:rotateX(40deg)]   transform-style-preserve-3d duration-300"
+                className=" md:h-150 h-120  transition-transform group-hover:[transform:rotateX(40deg)]   transform-style-preserve-3d duration-300"
               >
                 <div className="relative w-full h-1/2 md:h-[70%] z-10 ">
                   <Image
@@ -26,7 +26,7 @@ export const CardProject = ({ CardData }: { CardData: CardInfo[] }) => {
 
                 <div className="text-white/60 p-2 space-y-2 bg-black/20 text-center ">
                   <h1 className=" text-3xl">{data.title}</h1>
-                  <p className="mb-5">{data.description}</p>
+                  <p className="mb-5 h-25">{data.description}</p>
                   <Link
                   className="md:hidden text-red-600 text-md   font-semibold "
                   href={data.href}
